@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'MyFirstCocoaPodsLib0530'
   s.version          = '0.1.1'
   s.summary          = '나의 첫 번쩨 cocoapods 라이브러리 실습'
-  s.swift_version    = '18.5'
+  s.swift_version    = '6.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

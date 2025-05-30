@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		2C1E979C81E09A4B47DB0B52 /* Pods-MyFirstCocoaPodsLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstCocoaPodsLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-MyFirstCocoaPodsLib_Example/Pods-MyFirstCocoaPodsLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4AE74C4DFD016E4E117B0B45 /* MyFirstCocoaPodsLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MyFirstCocoaPodsLib.podspec; path = ../MyFirstCocoaPodsLib.podspec; sourceTree = "<group>"; };
-		55587EB1EB79D265A4070686 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4AE74C4DFD016E4E117B0B45 /* MyFirstCocoaPodsLib0530.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MyFirstCocoaPodsLib0530.podspec; path = ../MyFirstCocoaPodsLib0530.podspec; sourceTree = "<group>"; };
+		55587EB1EB79D265A4070686 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5F3277F4843FB8D8DB105A3A /* Pods_MyFirstCocoaPodsLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstCocoaPodsLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* MyFirstCocoaPodsLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstCocoaPodsLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		78217E8088D8B746FBC01318 /* Pods-MyFirstCocoaPodsLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstCocoaPodsLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MyFirstCocoaPodsLib_Tests/Pods-MyFirstCocoaPodsLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		831F8839A9923A74710FE95E /* Pods_MyFirstCocoaPodsLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstCocoaPodsLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34E643E284CD2324608A838 /* Pods-MyFirstCocoaPodsLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstCocoaPodsLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-MyFirstCocoaPodsLib_Tests/Pods-MyFirstCocoaPodsLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B657AD1DA4B6A26AC8C98316 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B657AD1DA4B6A26AC8C98316 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				78217E8088D8B746FBC01318 /* Pods-MyFirstCocoaPodsLib_Tests.debug.xcconfig */,
 				A34E643E284CD2324608A838 /* Pods-MyFirstCocoaPodsLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,7 +143,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				4AE74C4DFD016E4E117B0B45 /* MyFirstCocoaPodsLib.podspec */,
+				4AE74C4DFD016E4E117B0B45 /* MyFirstCocoaPodsLib0530.podspec */,
 				B657AD1DA4B6A26AC8C98316 /* README.md */,
 				55587EB1EB79D265A4070686 /* LICENSE */,
 			);
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -479,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyFirstCocoaPodsLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyFirstCocoaPodsLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -516,6 +518,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +537,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
